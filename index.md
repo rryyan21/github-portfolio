@@ -1,123 +1,79 @@
 ---
 layout: default
+title: Ryan Gupta's Portfolio
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Welcome to My Portfolio! 👋
 
-[Link to another page](./another-page.html).
+Hi, I'm **Ryan Gupta**, a **Computer Science student** at the **University of Michigan**.  
+I enjoy solving real-world problems with code, working on **computer vision projects**, and building creative tools.
 
-There should be whitespace between paragraphs.
+---
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## About Me
 
-# Header 1
+- 🎓 **Education**: Freshman, **UMich College of Engineering**
+- 🚀 **Interests**: Software Development, Computer Vision, Machine Learning, Electric Vehicles
+- 🏎 **Autonomous Team at MRacing**: Focused on **Perception and Algorithm Design**
+- 💡 **Skills**: Python, C++, MATLAB, Git, Machine Learning
+- 🌱 **Currently Learning**: React, Node.js, Full-Stack Web Development
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+---
 
-## Header 2
+## Projects 🚀
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Here are some of the projects I've worked on:
 
-### Header 3
+### 1. **Autonomous LiDAR Cone Detection**
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- **Description**: Developed a LiDAR pipeline to detect cones for autonomous vehicles. Worked on **RANSAC for ground removal** and clustering algorithms.
+- **Technologies**: MATLAB, Python
+- [🔗 View Project Code](#) _(Replace this with your GitHub link)_
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+### 2. **Wind Farm Environmental Analysis**
 
-#### Header 4
+- **Description**: Analyzed buoy wave height and wind speed data to design optimal wind farm locations.
+- **Tools**: MATLAB, Data Visualization
+- [🔗 View Project Code](#)
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### 3. **Social Media App Prototype**
 
-##### Header 5
+- **Description**: Built an app to help users share weekly life updates via short videos with friends.
+- **Technologies**: React, Node.js, GitHub for version control
+- [🔗 View Project Repository](#)
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+---
 
-###### Header 6
+## Skills 💻
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| **Programming**     | Python, C++, MATLAB               |
+| ------------------- | --------------------------------- |
+| **Web Development** | React, Node.js                    |
+| **Tools**           | Git, GitHub, NoMachine            |
+| **Data Analysis**   | MATLAB, Pandas, NumPy             |
+| **Specialties**     | Computer Vision, Algorithm Design |
 
-### There's a horizontal rule below this.
+---
 
-* * *
+## Experience 🌟
 
-### Here is an unordered list:
+### **MRacing - Autonomous Team**
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+_Computer Programmer | Perception and Algorithm Design_
 
-### And an ordered list:
+- Developed LiDAR cone detection pipelines and optimized point cloud processing.
+- Collaborated with team members to improve autonomous perception capabilities.
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+---
 
-### And a nested list:
+## Contact 📫
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+Feel free to reach out to me:
 
-### Small image
+- **GitHub**: [ryryan21](https://github.com/ryryan21)
+- **LinkedIn**: [Your LinkedIn URL](#) _(Replace this with your actual LinkedIn)_
+- **Email**: [ryangupta@umich.edu](mailto:ryangupta@umich.edu)
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+---
 
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Thanks for visiting my portfolio! 🚀
