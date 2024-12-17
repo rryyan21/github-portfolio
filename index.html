@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Gupta | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>    
+    <!-- Photo Section (on the left of the top) -->
+    <section id="profile-photo">
+        <!-- Replace 'images/ryanguptaimage.jpg' with the actual path to your photo -->
+        <img src="assets/images/mainImg.jpg" alt="Ryan Gupta's Photo">
+    </section>
+    
+
+    <header>
+        <div class="header-left">
+            <h1>Ryan Gupta</h1>
+        </div>
+        <div class="header-right">
+        </div>
+    </header>
+
+    <main>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-box">
+                    <img src="project1.jpg" alt="WIP">
+                    <p>WIP</p>
+                </div>
+                <div class="project-box">
+                    <img src="project2.jpg" alt="WIP">
+                    <p>WIP</p>
+                </div>
+                <div class="project-box">
+                    <img src="project3.jpg" alt="WIP">
+                    <p>WIP</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact</p>
+        <p>rryyan21@gmail.com</p>
+        <p>+1 530 786 9574</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const header = document.querySelector('header');
+        const footer = document.querySelector('footer');
+      
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                // Adding 'dark-mode' class to body, header, and footer
+                body.classList.add('dark-mode');
+                header.classList.add('dark-mode');
+                footer.classList.add('dark-mode');
+            } else {
+                // Removing 'dark-mode' class from body, header, and footer
+                body.classList.remove('dark-mode');
+                header.classList.remove('dark-mode');
+                footer.classList.remove('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>

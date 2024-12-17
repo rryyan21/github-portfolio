@@ -1,0 +1,171 @@
+/* Default colors for light mode */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f5; /* Light background by default */
+    color: #000000; /* Default text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+body.dark-mode {
+    background-color: #333333; /* Dark background for dark mode */
+    color: #ffffff; /* Light text color for dark mode */
+}
+
+header {
+    background: #f4f4f5;
+    color: #000000;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Distribute space between the two sections */
+    align-items: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header.dark-mode {
+    background: #333333; /* Dark header */
+    color: #fff;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header-right p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+}
+
+.project-box {
+    width: 250px;
+    height: 250px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-box img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.project-box p {
+    margin: 0;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.project-box:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+footer {
+    background: #e7e7e8;
+    color: #131313;
+    text-align: left;
+    padding: 3.5rem 2rem;
+    margin-top: 8rem; /* Add top margin to move the footer down */
+    font-size: 1rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+footer.dark-mode {
+    background: #333333; /* Dark footer */
+    color: #ffffff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon);
+    width: var(--size-of-icon);
+    border-radius: 20px;
+    left: var(--slider-offset);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #303136;
+}
+
+input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
+    background: #303136;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+
+#profile-photo img {
+    width: 200px; /* Adjust the width of the image */
+    height: 200px; /* Make sure the height matches the width */
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    margin: 20px auto; /* Centers the image and adds spacing above and below */
+    border: 5px solid #050813; /* Adds a border around the image */
+}
+
+
+
