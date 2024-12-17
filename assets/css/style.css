@@ -4,28 +4,29 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f5; /* Light background by default */
-    color: #000000; /* Default text color */
-    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    background-color: #f4f4f5;
+    color: #000000;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body.dark-mode {
-    background-color: #333333; /* Dark background for dark mode */
-    color: #ffffff; /* Light text color for dark mode */
+    background-color: #333333;
+    color: #ffffff;
 }
 
+/* Header styles */
 header {
     background: #f4f4f5;
     color: #000000;
     padding: 0.5rem 2rem;
     display: flex;
-    justify-content: space-between; /* Distribute space between the two sections */
+    justify-content: space-between;
     align-items: center;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header.dark-mode {
-    background: #333333; /* Dark header */
+    background: #333333;
     color: #fff;
 }
 
@@ -39,11 +40,13 @@ header.dark-mode {
     font-size: 1rem;
 }
 
+/* Section styles */
 section {
     padding: 2rem;
     margin: 1rem 0;
 }
 
+/* Projects Section */
 #projects h2 {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -53,7 +56,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .project-box {
@@ -81,21 +84,83 @@ section {
 }
 
 .project-box:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05);
 }
 
+/* Project links */
+.project-box a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.project-box a:hover {
+    opacity: 0.8;
+}
+
+.project-image-size {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Project Details */
+.project-details-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-image {
+    flex: 0 0 auto;
+}
+
+.project-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Profile Section */
+#profile-photo {
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Aligns content vertically */
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 2rem; /* Adds space around the section */
+}
+
+#profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #050813;
+    margin-right: 1rem; /* Adds spacing between image and text */
+}
+
+#profile-photo h1 {
+    font-size: 500rem;
+    font-weight: bold;
+    margin: 100;
+}
+
+
+/* Footer styles */
 footer {
     background: #e7e7e8;
     color: #131313;
     text-align: left;
     padding: 3.5rem 2rem;
-    margin-top: 8rem; /* Add top margin to move the footer down */
+    margin-top: 8rem;
     font-size: 1rem;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 footer.dark-mode {
-    background: #333333; /* Dark footer */
+    background: #333333;
     color: #ffffff;
 }
 
@@ -104,7 +169,7 @@ footer a {
     text-decoration: none;
 }
 
-/* The switch - the box around the slider */
+/* Dark Mode Toggle Switch */
 .switch {
     display: block;
     --width-of-switch: 3.5em;
@@ -130,7 +195,7 @@ footer a {
     right: 0;
     bottom: 0;
     background-color: #f4f4f5;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 30px;
 }
 
@@ -144,7 +209,7 @@ footer a {
     top: 50%;
     transform: translateY(-50%);
     background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
-    transition: .4s;
+    transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -157,63 +222,34 @@ input:checked + .slider:before {
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 
-
-#profile-photo img {
-    width: 200px; /* Adjust the width of the image */
-    height: 200px; /* Make sure the height matches the width */
-    border-radius: 50%; /* Makes the image circular */
-    display: block;
-    margin: 20px auto; /* Centers the image and adds spacing above and below */
-    border: 5px solid #050813; /* Adds a border around the image */
+/* Video Container Section */
+.video-container {
+    margin-top: 3rem;
+    text-align: center;
 }
 
-
-.project-box a {
-    display: block; /* Make the anchor tag take up the entire project box */
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits the color from the parent element */
-    height: 100%; /* Ensure the anchor fills the box */
-    width: 100%; /* Ensure the anchor fills the box */
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project-box a:hover {
-    opacity: 0.8; /* Slightly dim the box on hover for effect */
-}
-
-.project-image-size {
-    width: 100%; /* Adjust percentage to control the image size */
-    max-width: 500px; /* You can also limit the max width in pixels */
-    height: auto; /* Keep the aspect ratio intact */
-    display: block; /* Remove any unwanted inline behavior */
-    margin: 2 auto; /* Center the image */
-}
-
-/* Add this to your existing CSS file */
-.project-details-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem; /* Space between image and text */
-    justify-content: center;
-}
-
-.project-image {
-    flex: 0 0 auto; /* Don't grow or shrink */
-}
-
-.project-text {
-    flex: 1; /* Allow text to take remaining space */
-    max-width: 50%; /* Limit text width for readability */
-}
-
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
     .project-details-container {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .project-text {
         max-width: 100%;
         text-align: center;
+    }
+
+    .video-container {
+        margin-top: 2rem;
     }
 }
