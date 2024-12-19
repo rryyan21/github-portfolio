@@ -25,6 +25,7 @@ header {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+
 header.dark-mode {
     background: #333333;
     color: #fff;
@@ -39,6 +40,7 @@ header.dark-mode {
     margin: 0;
     font-size: 1rem;
 }
+
 
 /* Section styles */
 section {
@@ -138,7 +140,7 @@ section {
     height: 200px;
     border-radius: 50%;
     border: 5px solid #050813;
-    margin-right: 1rem; /* Adds spacing between image and text */
+    margin-left: 2.5rem; /* Adds spacing between image and text */
 }
 
 #profile-photo h1 {
@@ -146,6 +148,25 @@ section {
     font-weight: bold;
     margin: 100;
 }
+
+/* Profile Name Styles */
+#profile-name {
+    text-align: left; /* Centers the name horizontally */
+    margin-left: 5.5rem; /* Adds space above the name */
+    margin-top: 2rem;
+    font-size: 1rem; /* Adjusts the font size */
+    font-weight: bold; /* Makes the font bold */
+    color: #050813; /* Default dark color */
+    text-transform: uppercase; /* Makes all letters uppercase */
+    transition: color 0.5s ease; /* Add transition for color */
+
+}
+
+/* Dark mode styles for profile name */
+#profile-name.dark-mode {
+    color: #ffffff; /* Light color for dark mode */
+}
+
 
 
 /* Footer styles */
@@ -294,4 +315,46 @@ input:checked + .slider:before {
     100% {
         background-position: 0% 50%;
     }
+}
+
+
+/* Buttons Section */
+#buttons-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the buttons */
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    background: linear-gradient(45deg, #6a5acd, #8a2be2); /* Gradient background */
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #8a2be2, #6a5acd); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.btn:focus {
+    outline: none; /* Removes the outline on focus */
+    border: 2px solid #ff6347; /* Border color when focused */
+}
+
+.btn:active {
+    transform: scale(1); /* Reset the zoom effect when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow on click */
 }
