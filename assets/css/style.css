@@ -253,3 +253,45 @@ input:checked + .slider:before {
         margin-top: 2rem;
     }
 }
+
+/* Back to Portfolio Button */
+.back-to-portfolio-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(45deg, #0011ff, #a200ff, #00d4ff, #8e44ad);
+    background-size: 300% 300%;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect with animation */
+.back-to-portfolio-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-position: 100% 50%;
+    animation: gradient-shift-hover 3s ease infinite;
+}
+
+/* Pressed effect */
+.back-to-portfolio-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for hover animation */
+@keyframes gradient-shift-hover {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
