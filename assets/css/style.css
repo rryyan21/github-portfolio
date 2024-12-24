@@ -180,7 +180,7 @@ footer {
 }
 
 footer.dark-mode {
-    background: #333333;
+    background: #272727;
     color: #ffffff;
 }
 
@@ -351,4 +351,39 @@ input:checked + .slider:before {
     background: linear-gradient(45deg, #6a5acd, #8a2be2);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(1px);
+}
+
+
+/* Go to Projects Text Link */
+.go-to-projects-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6a5acd; /* Purple color */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Underline effect on hover */
+.go-to-projects-btn:hover {
+    color: #8a2be2; /* Change color on hover */
+}
+
+.go-to-projects-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #8a2be2; /* Purple underline */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Start with no underline */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Smooth underline animation */
+}
+
+/* Show the underline on hover */
+.go-to-projects-btn:hover::after {
+    transform: scaleX(1); /* Animate the underline */
+    transform-origin: bottom left;
 }
