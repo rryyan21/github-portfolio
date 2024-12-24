@@ -53,3 +53,40 @@ window.onscroll = function() {
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+// Text carousel functionality
+const languages = [
+    "Java Developer",
+    "Python Enthusiast",
+    "JavaScript & Web Developer",
+    "HTML & CSS",
+    "SQL Database Management"
+    // Add more languages/skills as needed
+];
+
+let currentIndex = 0;
+const carouselText = document.querySelector('.carousel-text');
+
+function updateCarouselText() {
+    // Remove visible class with current text
+    carouselText.classList.remove('visible');
+    
+    // After the fade out, update text and fade in
+    setTimeout(() => {
+        carouselText.textContent = languages[currentIndex];
+        carouselText.classList.add('visible');
+        
+        // Update index for next iteration
+        currentIndex = (currentIndex + 1) % languages.length;
+    }, 500); // This timeout should match the CSS transition time
+}
+
+// Initial text display
+if (carouselText) {
+    carouselText.textContent = languages[0];
+    carouselText.classList.add('visible');
+    
+    // Start the carousel
+    setInterval(updateCarouselText, 3000); // Changes text every 3 seconds
+}

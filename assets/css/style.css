@@ -18,7 +18,7 @@ body.dark-mode {
     color: #ffffff;
 }
 
-/* Header styles */
+/* Base header styles */
 header {
     background: #f4f4f5;
     color: #000000;
@@ -29,19 +29,35 @@ header {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-header.dark-mode {
-    background: #333333;
-    color: #fff;
+/* Main page header specific styles */
+.main-header {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: auto;
 }
 
-.header-left h1 {
+/* Project page header styles */
+.project-header {
+    width: 95%;
+    position: relative;
+}
+
+.project-header .header-left h1 {
     margin: 0;
     font-size: 1.5rem;
 }
 
-.header-right p {
-    margin: 0;
-    font-size: 1rem;
+.project-header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Maintain dark mode styles */
+header.dark-mode {
+    background: #333333;
+    color: #fff;
 }
 
 /* Section styles */
@@ -478,3 +494,52 @@ input:checked + .slider:before {
     opacity: 1;
     transition: opacity 0.5s ease, visibility 0s ease 0s; /* Instant visibility change once fade-in completes */
   }
+
+  /* Scrolling Text Container */
+.scrolling-container {
+    margin-top: 20px;
+    overflow: hidden;
+    max-width: 500px; /* Control the width of the container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Base styles for scrolling rows */
+.scrolling-text {
+    white-space: nowrap;
+    padding: 4px 0;
+    font-size: 1rem;
+    color: #6a5acd;
+    display: inline-block;
+}
+
+/* First row animation */
+.row1 {
+    animation: scroll-left 25s linear infinite; /* Reduced from 30s to 20s */
+}
+
+/* Second row animation */
+.row2 {
+    animation: scroll-left 15s linear infinite; /* Reduced from 25s to 15s */
+    animation-direction: reverse;
+}
+
+/* Dark mode support */
+body.dark-mode .scrolling-text {
+    color: #b8a6ff;
+}
+
+/* Scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Add hover effect to pause animation */
+.scrolling-text:hover {
+    animation-play-state: paused;
+}
