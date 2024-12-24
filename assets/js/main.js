@@ -36,3 +36,20 @@ themeToggle.addEventListener('change', () => {
         localStorage.setItem('darkMode', 'disabled');
     }
 });
+
+// Get the "Back to Top" button
+const backToTopButton = document.querySelector(".button");
+
+// When the user scrolls down more than 150px, show the button with a fade-in effect
+window.onscroll = function() {
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        backToTopButton.classList.add("visible"); // Show button with fade-in
+    } else {
+        backToTopButton.classList.remove("visible"); // Hide button with fade-out
+    }
+};
+
+// Scroll to top when the button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

@@ -360,8 +360,11 @@ input:checked + .slider:before {
     font-weight: 600;
     color: #6a5acd; /* Purple color */
     text-decoration: none;
-    position: relative;
+    position: absolute; /* Fixed positioning */
+    top: 2rem; /* Adjust the vertical position from the top */
+    right: 10rem; /* Adjust the horizontal position from the right */
     transition: color 0.3s ease; /* Smooth color transition */
+    z-index: 100; /* Make sure it's on top of other content */
 }
 
 /* Underline effect on hover */
@@ -387,3 +390,91 @@ input:checked + .slider:before {
     transform: scaleX(1); /* Animate the underline */
     transform-origin: bottom left;
 }
+
+
+/* From Uiverse.io by vinodjangid07 */
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed; /* Position the button fixed at the bottom of the page */
+    bottom: 100px; /* Adjust this to position it above the footer */
+    left: 90%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+  }
+  
+  .button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
+  /* Add fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Adds a little movement effect */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Style for the button when it is visible */
+  .button {
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s ease 0.5s; /* Delayed visibility change */
+  }
+  
+  .button.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s ease 0s; /* Instant visibility change once fade-in completes */
+  }
