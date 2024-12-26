@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Gupta | Project 1</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>    
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
     <!-- Photo Section (on the left of the top) -->
     <section id="profile-photo">
-        <img src="assets/images/mainImg.jpg" alt="Ryan Gupta's Photo">
+      <img src="assets/images/mainImg.jpg" alt="Ryan Gupta's Photo" />
     </section>
 
-    <header>
-        <div class="header-left">
-            <h1>Ryan Gupta</h1>
-        </div>
-        <div class="header-right">
-            <nav>
-                <a href="index.html">Back to Portfolio</a>
-            </nav>
-        </div>
+    <header class="project-header">
+      <div class="header-left">
+        <h1>Ryan Gupta</h1>
+      </div>
+      <div class="header-right">
+        <a href="index.html" class="back-to-portfolio-btn">Back to Portfolio</a>
+      </div>
     </header>
 
     <main>
-        <section id="project-description">
-            <h2>Janky Hollow Knight Project</h2>
-            <div class="project-details-container">
-                <div class="project-image">
-                    <img src="assets/images/Project1.jpg" alt="Janky Hollow Knight Image" class="project-image-size">
-                </div>
-                
-                <div class="project-text">
-                    <p> For the final project in my ICS4U1 course, 
-                        I was provided with a template of a basic, unfinished Zelda 
-                        game and tasked with creating something new using it. The project 
-                        was designed to help me learn how to navigate unfamiliar 
-                        documentation and work in a new IDE—Greenfoot—which none of us had
-                        used before. This experience taught me how to efficiently learn a 
-                        new programming language while allowing for a significant amount of 
-                        creative freedom. It was a great opportunity to develop my problem-solving 
-                        skills and explore new aspects of game development.
-                    </p>
+      <section id="project-description">
+        <h2>AI Tik Tac Toe</h2>
+        <div class="project-details-container">
+          <!-- Project Image -->
+          <div class="project-image">
+            <img
+              src="assets/images/Project2.jpg"
+              alt="AI Tik Tac Toe Image"
+              class="project-image-size"
+            />
+          </div>
 
-                    <h4>Technologies Used</h4>
-                    <ul>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Greenfoot IDE</li>
-                    </ul>
+          <!-- Project Description -->
+          <div class="project-text">
+            <p>
+              I created an online game of Tik Tac Toe where you are able to play
+              against an AI with an algorithm I created. It is kind of
+              impossible to beat the AI.
+            </p>
 
-                    <h3>Challenges and Solutions</h3>
-                    <p>Details about challenges faced during the development of the project and how they were overcome.</p>
-                </div>
-            </div>
-        </section>
+            <h4>Technologies Used</h4>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container">
+          <h3>Video Demonstration of Game</h3>
+          <video width="100%" controls>
+            <source src="assets/images/Project2Demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Contact</p>
-        <p>rryyan21@gmail.com</p>
-        <p>+1 530 786 9574</p>
+      <p>Contact</p>
+      <p>rryyan21@gmail.com</p>
+      <p>+1 530 786 9574</p>
     </footer>
 
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

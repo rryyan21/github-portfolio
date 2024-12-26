@@ -1,545 +1,547 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Default colors for light mode */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f5;
-    color: #000000;
-    transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  background-color: #f4f4f5;
+  color: #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body.dark-mode {
-    background-color: #333333;
-    color: #ffffff;
+  background-color: #333333;
+  color: #ffffff;
 }
 
 /* Base header styles */
 header {
-    background: #f4f4f5;
-    color: #000000;
-    padding: 0.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.5s ease, color 0.5s ease;
+  background: #f4f4f5;
+  color: #000000;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Main page header specific styles */
 .main-header {
-    position: absolute;
-    top: 22px;
-    right: 0;
-    width: auto;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  width: auto;
 }
 
 /* Project page header styles */
 .project-header {
-    width: 95%;
-    position: relative;
+  width: 95%;
+  position: relative;
 }
 
 .project-header .header-left h1 {
-    margin: 0;
-    font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .project-header .header-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Maintain dark mode styles */
 header.dark-mode {
-    background: #333333;
-    color: #fff;
+  background: #333333;
+  color: #fff;
 }
 
 /* Section styles */
 section {
-    padding: 2rem;
-    margin: 1rem 0;
+  padding: 2rem;
+  margin: 1rem 0;
 }
 
 /* Projects Section */
 #projects h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .project-box {
-    width: 250px;
-    height: 250px;
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    will-change: transform;
+  width: 250px;
+  height: 250px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  will-change: transform;
 }
 
 .project-box img {
-    width: 100%;
-    height: 75%;
-    object-fit: cover;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
 }
 
 .project-box p {
-    margin: 0;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+  margin: 0;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
 }
 
 .project-box:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Project links */
 .project-box a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    height: 100%;
-    width: 100%;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
 }
 
 .project-box a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .project-image-size {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Project Details */
 .project-details-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .project-image {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .project-text {
-    flex: 1;
-    max-width: 50%;
+  flex: 1;
+  max-width: 50%;
 }
 
 /* Profile Section */
 #profile-photo {
-    display: flex; /* Enables Flexbox */
-    align-items: center; /* Aligns content vertically */
-    justify-content: flex-start; /* Aligns content to the left */
-    padding: 2rem; /* Adds space around the section */
+  display: flex; /* Enables Flexbox */
+  align-items: center; /* Aligns content vertically */
+  justify-content: flex-start; /* Aligns content to the left */
+  padding: 2rem; /* Adds space around the section */
 }
 
 #profile-photo img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #050813;
-    margin-left: 2.5rem; /* Adds spacing between image and text */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #050813;
+  margin-left: 2.5rem; /* Adds spacing between image and text */
 }
 
 #profile-photo h1 {
-    font-size: 500rem;
-    font-weight: bold;
-    margin: 100;
+  font-size: 500rem;
+  font-weight: bold;
+  margin: 100;
 }
 
 /* Profile Name Styles */
 #profile-name {
-    text-align: center; 
-    margin-top: 2rem;
-    font-size: 3rem;
-    font-weight: bold; 
-    color: #050813; /* Default dark color */
-    text-transform: uppercase; /* Makes all letters uppercase */
-    transition: color 0.5s ease; /* Add transition for color */
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #050813; /* Default dark color */
+  text-transform: uppercase; /* Makes all letters uppercase */
+  transition: color 0.5s ease; /* Add transition for color */
 }
 
 /* Dark mode styles for profile name */
 #profile-name.dark-mode {
-    color: #ffffff; 
+  color: #ffffff;
 }
 
 /* Footer styles */
 footer {
-    background: #e7e7e8;
-    color: #131313;
-    text-align: center;
-    padding: 3.5rem 2rem;
-    margin-top: 8rem;
-    font-size: 1rem;
-    transition: background-color 0.5s ease, color 0.5s ease;
+  background: #e7e7e8;
+  color: #131313;
+  text-align: center;
+  padding: 3.5rem 2rem;
+  margin-top: 8rem;
+  font-size: 1rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 footer.dark-mode {
-    background: #272727;
-    color: #ffffff;
+  background: #272727;
+  color: #ffffff;
 }
 
 footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Dark Mode Toggle Switch */
 .switch {
-    display: block;
-    --width-of-switch: 3.5em;
-    --height-of-switch: 2em;
-    --size-of-icon: 1.4em;
-    --slider-offset: 0.3em;
-    position: relative;
-    width: var(--width-of-switch);
-    height: var(--height-of-switch);
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  --size-of-icon: 1.4em;
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
 }
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #f4f4f5;
-    transition: 0.4s;
-    border-radius: 30px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: var(--size-of-icon);
-    width: var(--size-of-icon);
-    border-radius: 20px;
-    left: var(--slider-offset);
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
-    transition: 0.4s;
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon);
+  width: var(--size-of-icon);
+  border-radius: 20px;
+  left: var(--slider-offset);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-    background-color: #303136;
+  background-color: #303136;
 }
 
 input:checked + .slider:before {
-    left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
-    background: #303136;
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
 }
 
 /* Video Container Section */
 .video-container {
-    margin-top: 3rem;
-    text-align: center;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .video-container video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border: 5px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .project-details-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .project-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .project-text {
-        max-width: 100%;
-        text-align: center;
-    }
+  .project-text {
+    max-width: 100%;
+    text-align: center;
+  }
 
-    .video-container {
-        margin-top: 2rem;
-    }
+  .video-container {
+    margin-top: 2rem;
+  }
 }
 
 /* Back to Portfolio Button */
 .back-to-portfolio-btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background: linear-gradient(45deg, #0011ff, #a200ff, #00d4ff, #8e44ad);
-    background-size: 300% 300%;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(45deg, #0011ff, #a200ff, #00d4ff, #8e44ad);
+  background-size: 300% 300%;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover effect with animation */
 .back-to-portfolio-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    background-position: 100% 50%;
-    animation: gradient-shift-hover 3s ease infinite;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  background-position: 100% 50%;
+  animation: gradient-shift-hover 3s ease infinite;
 }
 
 /* Pressed effect */
 .back-to-portfolio-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Keyframes for hover animation */
 @keyframes gradient-shift-hover {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Buttons Section */
 #buttons-section {
-    margin: 40px 0;
-    text-align: center;
+  margin: 40px 0;
+  text-align: center;
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between the buttons */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the buttons */
 }
 
 .btn {
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px; /* Rounded corners */
-    background: linear-gradient(45deg, #6a5acd, #8a2be2); /* Gradient background */
-    color: white;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(
+    45deg,
+    #6a5acd,
+    #8a2be2
+  ); /* Gradient background */
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #8a2be2, #6a5acd);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-    transform: translateY(-2px);
+  background: linear-gradient(45deg, #8a2be2, #6a5acd);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .btn:active {
-    background: linear-gradient(45deg, #6a5acd, #8a2be2);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    transform: translateY(1px);
+  background: linear-gradient(45deg, #6a5acd, #8a2be2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(1px);
 }
-
 
 /* Go to Projects Text Link */
 .go-to-projects-btn {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #6a5acd; /* Purple color */
-    text-decoration: none;
-    position: absolute; /* Fixed positioning */
-    top: 2rem; /* Adjust the vertical position from the top */
-    right: 10rem; /* Adjust the horizontal position from the right */
-    transition: color 0.3s ease; /* Smooth color transition */
-    z-index: 100; /* Make sure it's on top of other content */
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6a5acd; /* Purple color */
+  text-decoration: none;
+  position: absolute; /* Fixed positioning */
+  top: 2rem; /* Adjust the vertical position from the top */
+  right: 10rem; /* Adjust the horizontal position from the right */
+  transition: color 0.3s ease; /* Smooth color transition */
+  z-index: 100; /* Make sure it's on top of other content */
 }
 
 /* Underline effect on hover */
 .go-to-projects-btn:hover {
-    color: #8a2be2; /* Change color on hover */
+  color: #8a2be2; /* Change color on hover */
 }
 
 .go-to-projects-btn::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #8a2be2; /* Purple underline */
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0); /* Start with no underline */
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out; /* Smooth underline animation */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #8a2be2; /* Purple underline */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out; /* Smooth underline animation */
 }
 
 /* Show the underline on hover */
 .go-to-projects-btn:hover::after {
-    transform: scaleX(1); /* Animate the underline */
-    transform-origin: bottom left;
+  transform: scaleX(1); /* Animate the underline */
+  transform-origin: bottom left;
 }
-
 
 /* From Uiverse.io by vinodjangid07 */
 .button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: fixed; /* Position the button fixed at the bottom of the page */
-    bottom: 100px; /* Adjust this to position it above the footer */
-    left: 90%;
-    transform: translateX(-50%);
-    z-index: 1000; /* Ensure it's above other elements */
-  }
-  
-  .svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .button:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(181, 160, 255);
-    align-items: center;
-  }
-  
-  .button:hover .svgIcon {
-    /* width: 20px; */
-    transition-duration: 0.3s;
-    transform: translateY(-200%);
-  }
-  
-  .button::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    /* transition-duration: .3s; */
-    font-size: 0px;
-  }
-  
-  .button:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
-  }
-  
-  /* Add fade-in animation */
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px); /* Optional: Adds a little movement effect */
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Style for the button when it is visible */
-  .button {
-    visibility: hidden; /* Initially hidden */
-    opacity: 0;
-    transition: opacity 0.5s ease, visibility 0s ease 0.5s; /* Delayed visibility change */
-  }
-  
-  .button.visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.5s ease, visibility 0s ease 0s; /* Instant visibility change once fade-in completes */
-  }
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed; /* Position the button fixed at the bottom of the page */
+  bottom: 100px; /* Adjust this to position it above the footer */
+  left: 90%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other elements */
+}
 
-  /* Scrolling Text Container */
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Adds a little movement effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for the button when it is visible */
+.button {
+  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0s ease 0.5s; /* Delayed visibility change */
+}
+
+.button.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease, visibility 0s ease 0s; /* Instant visibility change once fade-in completes */
+}
+
+/* Scrolling Text Container */
 .scrolling-container {
-    margin-top: 20px;
-    overflow: hidden;
-    max-width: 500px; /* Control the width of the container */
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  max-width: 500px; /* Control the width of the container */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Base styles for scrolling rows */
 .scrolling-text {
-    white-space: nowrap;
-    padding: 4px 0;
-    font-size: 1rem;
-    color: #6a5acd;
-    display: inline-block;
+  white-space: nowrap;
+  padding: 4px 0;
+  font-size: 1rem;
+  color: #6a5acd;
+  display: inline-block;
 }
 
 /* First row animation */
 .row1 {
-    animation: scroll-left 25s linear infinite; /* Reduced from 30s to 20s */
+  animation: scroll-left 25s linear infinite; /* Reduced from 30s to 20s */
 }
 
 /* Second row animation */
 .row2 {
-    animation: scroll-left 15s linear infinite; /* Reduced from 25s to 15s */
-    animation-direction: reverse;
+  animation: scroll-left 15s linear infinite; /* Reduced from 25s to 15s */
+  animation-direction: reverse;
 }
 
 /* Dark mode support */
 body.dark-mode .scrolling-text {
-    color: #b8a6ff;
+  color: #b8a6ff;
 }
 
 /* Scrolling animation */
 @keyframes scroll-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Add hover effect to pause animation */
 .scrolling-text:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
